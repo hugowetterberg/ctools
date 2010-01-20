@@ -113,7 +113,8 @@ function ctools_export_load_object($table, $type = 'all', $args = array()) {
   }
 
   // Build the query
-  $query = db_select($table);
+  $query = db_select($table, 't');
+  $query->fields('t');
   $conditions = array();
   $query_args = array();
 

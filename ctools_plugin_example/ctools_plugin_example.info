@@ -1,0 +1,10 @@
+; $Id: ctools_plugin_example.info,v 1.2 2009/10/08 11:03:24 sun Exp $
+name = Chaos Tools (CTools) Plugin Example
+description = Shows how an external module can provide ctools plugins (for Panels, etc.).
+package = Chaos tool suite
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = page_manager
+dependencies[] = advanced_help
+core = 7.x
+files[] = ctools_plugin_example.module
